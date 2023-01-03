@@ -33,11 +33,11 @@
 	"slug": "api-rest-countries",
 	"use_basic_auth": false,
 	"use_go_plugin_auth": false,
-	"use_keyless": false,
+	"use_keyless": true,
 	"use_mutual_tls_auth": false,
 	"use_oauth2": false,
 	"use_openid": false,
-	"use_standard_auth": true,
+	"use_standard_auth": false,
 	"version_data": {
 		"not_versioned": false,
 		"default_version": "v3.1",
