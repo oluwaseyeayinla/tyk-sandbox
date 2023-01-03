@@ -1,0 +1,30 @@
+{
+	"61771aa34fb23a000178d4df": {
+		"access_rights": {
+			"de6f30b5070b4c7d99c7bcdfaafd8bde": {
+				"api_name": "de6f30b5070b4c7d99c7bcdfaafd8bde",
+				"api_id": "REST Sample Sandbox",
+				"versions": [
+					"Default"
+				]
+			}
+		},
+		"active": true,
+		"id": "61771aa34fb23a000178d4df",
+		"partitions": {
+			"acl": true,
+			"complexity": false,
+			"per_api": false,
+			"quota": true,
+			"rate_limit": false
+		},
+		"per": 10,
+    "quota_max": 400,
+    "quota_renews": 0,
+    "quota_remaining": 200,
+    "quota_renewal_rate": 0,
+		"rate": 3,
+		"state": "active",
+		"tags": []
+	}
+}
