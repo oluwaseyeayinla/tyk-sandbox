@@ -1,11 +1,11 @@
 {
   "_id": "61771aa34fb23a000178d4df",
   "access_rights": {
-    "de6f30b5070b4c7d99c7bcdfaafd8bde": {
-      "api_name": "de6f30b5070b4c7d99c7bcdfaafd8bde",
-      "api_id": "REST Sample Sandbox",
+    "uv7qgbnoejf9a830sh5lzpwm6y": {
+      "api_name": "uv7qgbnoejf9a830sh5lzpwm6y",
+      "api_id": "API REST Conference",
       "versions": [
-        "v2", "v3"
+        "2.0.0"
       ]
     }
   },
