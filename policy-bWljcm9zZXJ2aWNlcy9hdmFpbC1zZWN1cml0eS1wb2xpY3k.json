@@ -1,0 +1,42 @@
+{
+  "_id": "63ea6616b79e6d0001512b8e",
+  "id": "bWljcm9zZXJ2aWNlcy9hdmFpbC1zZWN1cml0eS1wb2xpY3k",
+  "name": "avail-security-policy",
+  "org_id": "635ae6ce7506cc0001d98908",
+  "rate": 500,
+  "per": 60,
+  "quota_max": 10000,
+  "quota_renewal_rate": 86400,
+  "throttle_interval": 0,
+  "throttle_retry_limit": 0,
+  "max_query_depth": 0,
+  "access_rights": {
+    "bWljcm9zZXJ2aWNlcy9ncmFwaHFsLXJlc3RyaWN0ZWQ": {
+      "api_name": "graphql-restricted",
+      "api_id": "bWljcm9zZXJ2aWNlcy9ncmFwaHFsLXJlc3RyaWN0ZWQ",
+      "versions": [
+        "Default"
+      ],
+      "allowed_urls": [],
+      "restricted_types": [],
+      "limit": null,
+      "field_access_rights": [],
+      "allowance_scope": ""
+    }
+  },
+  "hmac_enabled": false,
+  "active": true,
+  "is_inactive": false,
+  "date_created": "2023-02-13T16:32:22.402Z",
+  "tags": [],
+  "key_expires_in": 0,
+  "partitions": {
+    "quota": false,
+    "rate_limit": false,
+    "complexity": false,
+    "acl": false,
+    "per_api": false
+  },
+  "last_updated": "1680628371",
+  "meta_data": {}
+}

@@ -1,0 +1,31 @@
+{
+  "_id": "63e42f522569c90001bfaf81",
+  "id": "63e42f522569c90001bfaf81",
+  "name": "test",
+  "org_id": "635ae6ce7506cc0001d98908",
+  "rate": 1000,
+  "per": 60,
+  "quota_max": -1,
+  "quota_renewal_rate": -1,
+  "throttle_interval": -1,
+  "throttle_retry_limit": -1,
+  "max_query_depth": -1,
+  "access_rights": {},
+  "hmac_enabled": false,
+  "active": true,
+  "is_inactive": false,
+  "date_created": "2023-02-08T23:25:06.008Z",
+  "tags": [],
+  "key_expires_in": 0,
+  "partitions": {
+    "quota": true,
+    "rate_limit": true,
+    "complexity": false,
+    "acl": true,
+    "per_api": false
+  },
+  "last_updated": "1685519076",
+  "meta_data": {
+    "gitthubGroup": "microservices"
+  }
+}

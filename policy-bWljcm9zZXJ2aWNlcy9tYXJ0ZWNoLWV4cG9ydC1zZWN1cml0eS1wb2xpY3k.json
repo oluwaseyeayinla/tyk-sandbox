@@ -1,0 +1,42 @@
+{
+  "_id": "642f36bc34465e0001f1279e",
+  "id": "bWljcm9zZXJ2aWNlcy9tYXJ0ZWNoLWV4cG9ydC1zZWN1cml0eS1wb2xpY3k",
+  "name": "martech-export-security-policy",
+  "org_id": "635ae6ce7506cc0001d98908",
+  "rate": 500,
+  "per": 60,
+  "quota_max": 10000,
+  "quota_renewal_rate": 86400,
+  "throttle_interval": 0,
+  "throttle_retry_limit": 0,
+  "max_query_depth": 0,
+  "access_rights": {
+    "bWljcm9zZXJ2aWNlcy9ncmFwaHFsLWludGVybmFs": {
+      "api_name": "graphql-internal",
+      "api_id": "bWljcm9zZXJ2aWNlcy9ncmFwaHFsLWludGVybmFs",
+      "versions": [
+        "Default"
+      ],
+      "allowed_urls": [],
+      "restricted_types": [],
+      "limit": null,
+      "field_access_rights": [],
+      "allowance_scope": ""
+    }
+  },
+  "hmac_enabled": false,
+  "active": true,
+  "is_inactive": false,
+  "date_created": "2023-04-06T21:16:44.178Z",
+  "tags": [],
+  "key_expires_in": 0,
+  "partitions": {
+    "quota": false,
+    "rate_limit": false,
+    "complexity": false,
+    "acl": false,
+    "per_api": false
+  },
+  "last_updated": "1680815804",
+  "meta_data": {}
+}

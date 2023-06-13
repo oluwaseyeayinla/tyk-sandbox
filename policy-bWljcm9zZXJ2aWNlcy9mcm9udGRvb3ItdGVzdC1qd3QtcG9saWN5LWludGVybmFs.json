@@ -1,0 +1,42 @@
+{
+  "_id": "647f77ef1340a5000167efb5",
+  "id": "bWljcm9zZXJ2aWNlcy9mcm9udGRvb3ItdGVzdC1qd3QtcG9saWN5LWludGVybmFs",
+  "name": "frontdoor-test-jwt-policy-internal",
+  "org_id": "635ae6ce7506cc0001d98908",
+  "rate": 0,
+  "per": 0,
+  "quota_max": 0,
+  "quota_renewal_rate": 0,
+  "throttle_interval": 0,
+  "throttle_retry_limit": 0,
+  "max_query_depth": 0,
+  "access_rights": {
+    "bWljcm9zZXJ2aWNlcy9mcm9udGRvb3ItdGVzdC1qd3QtYXV0aC1pbnRlcm5hbA": {
+      "api_name": "frontdoor-test-jwt-auth-internal",
+      "api_id": "bWljcm9zZXJ2aWNlcy9mcm9udGRvb3ItdGVzdC1qd3QtYXV0aC1pbnRlcm5hbA",
+      "versions": [
+        "Default"
+      ],
+      "allowed_urls": [],
+      "restricted_types": [],
+      "limit": null,
+      "field_access_rights": [],
+      "allowance_scope": ""
+    }
+  },
+  "hmac_enabled": false,
+  "active": true,
+  "is_inactive": false,
+  "date_created": "2023-06-06T18:16:14.928Z",
+  "tags": [],
+  "key_expires_in": 0,
+  "partitions": {
+    "quota": false,
+    "rate_limit": false,
+    "complexity": false,
+    "acl": false,
+    "per_api": false
+  },
+  "last_updated": "1686075374",
+  "meta_data": {}
+}
