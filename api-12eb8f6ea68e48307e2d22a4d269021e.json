@@ -3,7 +3,7 @@
     "id": "646ef1e8a07c7c00015e042d",
     "name": "frontdoor-test-keyless-internal",
     "slug": "",
-    "listen_port": 0,
+    "listen_port": 8081,
     "protocol": "http",
     "enable_proxy_protocol": false,
     "api_id": "12eb8f6ea68e48307e2d22a4d269021e",
