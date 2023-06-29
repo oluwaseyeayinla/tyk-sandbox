@@ -1,0 +1,42 @@
+{
+  "_id": "64923cfdd13bcc0001d9c5c7",
+  "id": "64923cfdd13bcc0001d9c5c7",
+  "name": "HMAC",
+  "org_id": "647f46b4d13bcc0001572f59",
+  "rate": 1000,
+  "per": 60,
+  "quota_max": -1,
+  "quota_renewal_rate": -1,
+  "throttle_interval": -1,
+  "throttle_retry_limit": -1,
+  "max_query_depth": -1,
+  "access_rights": {
+    "1b08f77d845d4be46f11f6d8329d96d5": {
+      "api_name": "HMAC",
+      "api_id": "1b08f77d845d4be46f11f6d8329d96d5",
+      "versions": [
+        "Default"
+      ],
+      "allowed_urls": [],
+      "restricted_types": [],
+      "limit": null,
+      "field_access_rights": [],
+      "allowance_scope": ""
+    }
+  },
+  "hmac_enabled": true,
+  "active": true,
+  "is_inactive": false,
+  "date_created": "2023-06-20T23:57:49.614Z",
+  "tags": [],
+  "key_expires_in": 86400,
+  "partitions": {
+    "quota": true,
+    "rate_limit": true,
+    "complexity": false,
+    "acl": true,
+    "per_api": false
+  },
+  "last_updated": "1687305469",
+  "meta_data": {}
+}

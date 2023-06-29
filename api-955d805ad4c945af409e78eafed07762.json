@@ -1,13 +1,13 @@
 {
   "api_definition": {
-    "id": "645ce62f2e6d3a00015092a9",
-    "name": "Redirect API",
-    "slug": "redirect-api",
+    "id": "648dd369d13bcc0001bb648c",
+    "name": "Liveness Check API",
+    "slug": "liveness-check-api",
     "listen_port": 0,
     "protocol": "",
     "enable_proxy_protocol": false,
-    "api_id": "41935918fdd6410e63c1374526823d54",
-    "org_id": "645c216b2e6d3a0001d17725",
+    "api_id": "955d805ad4c945af409e78eafed07762",
+    "org_id": "647f46b4d13bcc0001572f59",
     "use_keyless": true,
     "use_oauth2": false,
     "use_openid": false,
@@ -207,11 +207,11 @@
     "use_go_plugin_auth": false,
     "enable_coprocess_auth": false,
     "custom_plugin_auth_enabled": false,
-    "jwt_signing_method": "",
-    "jwt_source": "",
-    "jwt_identity_base_field": "",
+    "jwt_signing_method": "hmac",
+    "jwt_source": "dHlrMTIz",
+    "jwt_identity_base_field": "sub",
     "jwt_client_base_field": "",
-    "jwt_policy_field_name": "",
+    "jwt_policy_field_name": "pol",
     "jwt_default_policies": [],
     "jwt_issued_at_validation_skew": 0,
     "jwt_expires_at_validation_skew": 0,
@@ -260,24 +260,6 @@
           },
           "use_extended_paths": true,
           "extended_paths": {
-            "white_list": [
-              {
-                "disabled": false,
-                "path": "/fulcrum/next",
-                "method": "",
-                "ignore_case": false,
-                "method_actions": {
-                  "GET": {
-                    "action": "reply",
-                    "code": 301,
-                    "data": "",
-                    "headers": {
-                      "Location": "http://google.com"
-                    }
-                  }
-                }
-              }
-            ],
             "persist_graphql": []
           },
           "global_headers": {},
@@ -311,8 +293,8 @@
     },
     "proxy": {
       "preserve_host_header": false,
-      "listen_path": "/redirect-api/",
-      "target_url": "http://httpbin.org/anything/redirect",
+      "listen_path": "/liveness/check/api/",
+      "target_url": "http://host.docker.internal:8080/hello",
       "disable_strip_slash": true,
       "strip_listen_path": true,
       "enable_load_balancing": false,
@@ -365,7 +347,7 @@
     "custom_middleware_bundle_disabled": false,
     "cache_options": {
       "cache_timeout": 60,
-      "enable_cache": false,
+      "enable_cache": true,
       "cache_all_safe_requests": false,
       "cache_response_codes": [],
       "enable_upstream_cache_control": false,
@@ -374,7 +356,7 @@
     },
     "session_lifetime": 0,
     "active": true,
-    "internal": false,
+    "internal": true,
     "auth_provider": {
       "name": "",
       "storage_engine": "",
@@ -448,7 +430,7 @@
       },
       "proxy": {
         "auth_headers": {},
-        "request_headers": {}
+        "request_headers": null
       },
       "subgraph": {
         "sdl": ""

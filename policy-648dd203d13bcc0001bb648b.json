@@ -1,0 +1,60 @@
+{
+  "_id": "648dd203d13bcc0001bb648b",
+  "id": "648dd203d13bcc0001bb648b",
+  "name": "Sample JWT Internal Topic Policy",
+  "org_id": "647f46b4d13bcc0001572f59",
+  "rate": 1000,
+  "per": 60,
+  "quota_max": -1,
+  "quota_renewal_rate": -1,
+  "throttle_interval": -1,
+  "throttle_retry_limit": -1,
+  "max_query_depth": -1,
+  "access_rights": {
+    "0759e89acbe54f694b48beb2ee62e10e": {
+      "api_name": "Sample JWT Internal Topic API",
+      "api_id": "0759e89acbe54f694b48beb2ee62e10e",
+      "versions": [
+        "Default"
+      ],
+      "allowed_urls": [
+        {
+          "url": "/topic.*",
+          "methods": [
+            "GET"
+          ]
+        }
+      ],
+      "restricted_types": [],
+      "limit": {
+        "rate": 1000,
+        "per": 60,
+        "throttle_interval": -1,
+        "throttle_retry_limit": -1,
+        "max_query_depth": -1,
+        "quota_max": -1,
+        "quota_renews": 0,
+        "quota_remaining": 0,
+        "quota_renewal_rate": -1,
+        "set_by_policy": false
+      },
+      "field_access_rights": [],
+      "allowance_scope": ""
+    }
+  },
+  "hmac_enabled": false,
+  "active": true,
+  "is_inactive": false,
+  "date_created": "2023-06-17T15:32:19.754Z",
+  "tags": [],
+  "key_expires_in": 0,
+  "partitions": {
+    "quota": false,
+    "rate_limit": false,
+    "complexity": false,
+    "acl": false,
+    "per_api": true
+  },
+  "last_updated": "1687024356",
+  "meta_data": {}
+}

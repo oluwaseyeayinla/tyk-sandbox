@@ -1,0 +1,72 @@
+{
+  "_id": "648e203dd13bcc0001bb6492",
+  "id": "648e203dd13bcc0001bb6492",
+  "name": "Internal Speaker Policy",
+  "org_id": "647f46b4d13bcc0001572f59",
+  "rate": 1000,
+  "per": 60,
+  "quota_max": -1,
+  "quota_renewal_rate": -1,
+  "throttle_interval": -1,
+  "throttle_retry_limit": -1,
+  "max_query_depth": -1,
+  "access_rights": {
+    "0cca3dbf76cb40d758d538cd6813c67e": {
+      "api_name": "External Proxy",
+      "api_id": "0cca3dbf76cb40d758d538cd6813c67e",
+      "versions": [
+        "Default"
+      ],
+      "allowed_urls": [],
+      "restricted_types": [],
+      "limit": null,
+      "field_access_rights": [],
+      "allowance_scope": ""
+    },
+    "26cb60bd8f154cb64369e174bbcec60f": {
+      "api_name": "Internal Speaker",
+      "api_id": "26cb60bd8f154cb64369e174bbcec60f",
+      "versions": [
+        "Default"
+      ],
+      "allowed_urls": [
+        {
+          "url": "/speaker.*",
+          "methods": [
+            "GET"
+          ]
+        }
+      ],
+      "restricted_types": [],
+      "limit": {
+        "rate": 1000,
+        "per": 60,
+        "throttle_interval": -1,
+        "throttle_retry_limit": -1,
+        "max_query_depth": -1,
+        "quota_max": -1,
+        "quota_renews": 0,
+        "quota_remaining": 0,
+        "quota_renewal_rate": -1,
+        "set_by_policy": false
+      },
+      "field_access_rights": [],
+      "allowance_scope": ""
+    }
+  },
+  "hmac_enabled": false,
+  "active": true,
+  "is_inactive": false,
+  "date_created": "2023-06-17T21:06:05.639Z",
+  "tags": [],
+  "key_expires_in": 0,
+  "partitions": {
+    "quota": false,
+    "rate_limit": false,
+    "complexity": false,
+    "acl": false,
+    "per_api": true
+  },
+  "last_updated": "1687037098",
+  "meta_data": {}
+}

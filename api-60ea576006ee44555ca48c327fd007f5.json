@@ -1,15 +1,15 @@
 {
   "api_definition": {
-    "id": "645e3c1a2e6d3a00015092ac",
-    "name": "Event Handler API",
-    "slug": "event-handler-api",
+    "id": "64923c4ed13bcc0001d9c5c4",
+    "name": "Oauth",
+    "slug": "oauth",
     "listen_port": 0,
     "protocol": "",
     "enable_proxy_protocol": false,
-    "api_id": "b0edc4a39ab04d4b5389d28a9b7bcdc9",
-    "org_id": "645c216b2e6d3a0001d17725",
+    "api_id": "60ea576006ee44555ca48c327fd007f5",
+    "org_id": "647f46b4d13bcc0001572f59",
     "use_keyless": false,
-    "use_oauth2": false,
+    "use_oauth2": true,
     "use_openid": false,
     "openid_options": {
       "providers": [],
@@ -203,7 +203,7 @@
     "upstream_certificates": {},
     "pinned_public_keys": {},
     "enable_jwt": false,
-    "use_standard_auth": true,
+    "use_standard_auth": false,
     "use_go_plugin_auth": false,
     "enable_coprocess_auth": false,
     "custom_plugin_auth_enabled": false,
@@ -293,7 +293,7 @@
     },
     "proxy": {
       "preserve_host_header": false,
-      "listen_path": "/event-handler-api/",
+      "listen_path": "/oauth/",
       "target_url": "http://httpbin.org/",
       "disable_strip_slash": true,
       "strip_listen_path": true,
@@ -347,7 +347,7 @@
     "custom_middleware_bundle_disabled": false,
     "cache_options": {
       "cache_timeout": 60,
-      "enable_cache": false,
+      "enable_cache": true,
       "cache_all_safe_requests": false,
       "cache_response_codes": [],
       "enable_upstream_cache_control": false,
@@ -368,24 +368,7 @@
       "meta": {}
     },
     "event_handlers": {
-      "events": {
-        "AuthFailure": [
-          {
-            "handler_name": "eh_web_hook_handler",
-            "handler_meta": {
-              "api_model": {},
-              "event_timeout": 60,
-              "header_map": {},
-              "id": "645e3c7b2e6d3a00015092ad",
-              "method": "POST",
-              "name": "Default Webhook",
-              "org_id": "645c216b2e6d3a0001d17725",
-              "target_path": "http://httpbin.org/anything/",
-              "template_path": ""
-            }
-          }
-        ]
-      }
+      "events": {}
     },
     "enable_batch_request_support": false,
     "enable_ip_whitelisting": false,
@@ -447,7 +430,7 @@
       },
       "proxy": {
         "auth_headers": {},
-        "request_headers": {}
+        "request_headers": null
       },
       "subgraph": {
         "sdl": ""
@@ -470,23 +453,7 @@
       "providers": []
     }
   },
-  "hook_references": [
-    {
-      "event_name": "AuthFailure",
-      "event_timeout": 60,
-      "hook": {
-        "api_model": {},
-        "event_timeout": 0,
-        "header_map": {},
-        "id": "645e3c7b2e6d3a00015092ad",
-        "method": "POST",
-        "name": "Default Webhook",
-        "org_id": "645c216b2e6d3a0001d17725",
-        "target_path": "http://httpbin.org/anything/",
-        "template_path": ""
-      }
-    }
-  ],
+  "hook_references": [],
   "is_site": false,
   "sort_by": 0,
   "user_group_owners": [],

@@ -1,0 +1,42 @@
+{
+  "_id": "64923d1dd13bcc0001d9c5c9",
+  "id": "64923d1dd13bcc0001d9c5c9",
+  "name": "OIDC",
+  "org_id": "647f46b4d13bcc0001572f59",
+  "rate": 1000,
+  "per": 60,
+  "quota_max": -1,
+  "quota_renewal_rate": -1,
+  "throttle_interval": -1,
+  "throttle_retry_limit": -1,
+  "max_query_depth": -1,
+  "access_rights": {
+    "e35ea74b100e42a57ea0d9d0cad6a8f0": {
+      "api_name": "OIDC",
+      "api_id": "e35ea74b100e42a57ea0d9d0cad6a8f0",
+      "versions": [
+        "Default"
+      ],
+      "allowed_urls": [],
+      "restricted_types": [],
+      "limit": null,
+      "field_access_rights": [],
+      "allowance_scope": ""
+    }
+  },
+  "hmac_enabled": false,
+  "active": true,
+  "is_inactive": false,
+  "date_created": "2023-06-20T23:58:21.394Z",
+  "tags": [],
+  "key_expires_in": 86400,
+  "partitions": {
+    "quota": true,
+    "rate_limit": true,
+    "complexity": false,
+    "acl": true,
+    "per_api": false
+  },
+  "last_updated": "1687305501",
+  "meta_data": {}
+}

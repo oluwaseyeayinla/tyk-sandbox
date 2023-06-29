@@ -1,14 +1,14 @@
 {
   "api_definition": {
-    "id": "64256eea5c86410001c609aa",
-    "name": "configurations/MODEL_SHDR_MOBILE_SETTINGS/SHDR_Mobile_Settings_V1_GET #lists_service",
-    "slug": "lists_service",
+    "id": "648b0f79d13bcc000124b88e",
+    "name": "Support Ticket #16806",
+    "slug": "support-ticket-16806",
     "listen_port": 0,
     "protocol": "",
     "enable_proxy_protocol": false,
-    "api_id": "d670a307085b47114b82c39d61c398f6",
-    "org_id": "645c216b2e6d3a0001d17725",
-    "use_keyless": false,
+    "api_id": "953b388dce66408f5315bed6e4a2d22d",
+    "org_id": "647f46b4d13bcc0001572f59",
+    "use_keyless": true,
     "use_oauth2": false,
     "use_openid": false,
     "openid_options": {
@@ -62,6 +62,132 @@
           "error_code": 0,
           "error_message": ""
         }
+      },
+      "basic": {
+        "name": "",
+        "use_param": false,
+        "param_name": "",
+        "use_cookie": false,
+        "cookie_name": "",
+        "disable_header": false,
+        "auth_header_name": "Authorization",
+        "use_certificate": false,
+        "validate_signature": false,
+        "signature": {
+          "algorithm": "",
+          "header": "",
+          "use_param": false,
+          "param_name": "",
+          "secret": "",
+          "allowed_clock_skew": 0,
+          "error_code": 0,
+          "error_message": ""
+        }
+      },
+      "coprocess": {
+        "name": "",
+        "use_param": false,
+        "param_name": "",
+        "use_cookie": false,
+        "cookie_name": "",
+        "disable_header": false,
+        "auth_header_name": "Authorization",
+        "use_certificate": false,
+        "validate_signature": false,
+        "signature": {
+          "algorithm": "",
+          "header": "",
+          "use_param": false,
+          "param_name": "",
+          "secret": "",
+          "allowed_clock_skew": 0,
+          "error_code": 0,
+          "error_message": ""
+        }
+      },
+      "hmac": {
+        "name": "",
+        "use_param": false,
+        "param_name": "",
+        "use_cookie": false,
+        "cookie_name": "",
+        "disable_header": false,
+        "auth_header_name": "Authorization",
+        "use_certificate": false,
+        "validate_signature": false,
+        "signature": {
+          "algorithm": "",
+          "header": "",
+          "use_param": false,
+          "param_name": "",
+          "secret": "",
+          "allowed_clock_skew": 0,
+          "error_code": 0,
+          "error_message": ""
+        }
+      },
+      "jwt": {
+        "name": "",
+        "use_param": false,
+        "param_name": "",
+        "use_cookie": false,
+        "cookie_name": "",
+        "disable_header": false,
+        "auth_header_name": "Authorization",
+        "use_certificate": false,
+        "validate_signature": false,
+        "signature": {
+          "algorithm": "",
+          "header": "",
+          "use_param": false,
+          "param_name": "",
+          "secret": "",
+          "allowed_clock_skew": 0,
+          "error_code": 0,
+          "error_message": ""
+        }
+      },
+      "oauth": {
+        "name": "",
+        "use_param": false,
+        "param_name": "",
+        "use_cookie": false,
+        "cookie_name": "",
+        "disable_header": false,
+        "auth_header_name": "Authorization",
+        "use_certificate": false,
+        "validate_signature": false,
+        "signature": {
+          "algorithm": "",
+          "header": "",
+          "use_param": false,
+          "param_name": "",
+          "secret": "",
+          "allowed_clock_skew": 0,
+          "error_code": 0,
+          "error_message": ""
+        }
+      },
+      "oidc": {
+        "name": "",
+        "use_param": false,
+        "param_name": "",
+        "use_cookie": false,
+        "cookie_name": "",
+        "disable_header": false,
+        "auth_header_name": "Authorization",
+        "use_certificate": false,
+        "validate_signature": false,
+        "signature": {
+          "algorithm": "",
+          "header": "",
+          "use_param": false,
+          "param_name": "",
+          "secret": "",
+          "allowed_clock_skew": 0,
+          "error_code": 0,
+          "error_message": ""
+        }
       }
     },
     "use_basic_auth": false,
@@ -77,7 +203,7 @@
     "upstream_certificates": {},
     "pinned_public_keys": {},
     "enable_jwt": false,
-    "use_standard_auth": true,
+    "use_standard_auth": false,
     "use_go_plugin_auth": false,
     "enable_coprocess_auth": false,
     "custom_plugin_auth_enabled": false,
@@ -114,8 +240,8 @@
       "enabled": false,
       "name": "",
       "default": "",
-      "location": "",
-      "key": "",
+      "location": "header",
+      "key": "x-api-version",
       "strip_path": false,
       "strip_versioning_data": false,
       "versions": {}
@@ -167,10 +293,10 @@
     },
     "proxy": {
       "preserve_host_header": false,
-      "listen_path": "/lists-service/configurations/MODEL_SHDR_MOBILE_SETTINGS/SHDR_Mobile_Settings_V1",
-      "target_url": "https://pep-service-internal.cslatest.shdrapps.disney.com",
-      "disable_strip_slash": false,
-      "strip_listen_path": false,
+      "listen_path": "/support-ticket-16806/",
+      "target_url": "",
+      "disable_strip_slash": true,
+      "strip_listen_path": true,
       "enable_load_balancing": false,
       "target_list": [],
       "check_host_against_uptime_tests": false,
@@ -198,40 +324,30 @@
     "disable_rate_limit": false,
     "disable_quota": false,
     "custom_middleware": {
-      "pre": [
-        {
-          "disabled": false,
-          "name": "custAuthPlugin",
-          "path": "./middleware/disney.js",
-          "require_session": true,
-          "raw_body_only": false
-        }
-      ],
+      "pre": [],
       "post": [],
       "post_key_auth": [],
       "auth_check": {
         "disabled": false,
         "name": "",
         "path": "",
-        "require_session": true,
+        "require_session": false,
         "raw_body_only": false
       },
       "response": [],
-      "driver": "otto",
+      "driver": "",
       "id_extractor": {
         "disabled": false,
-        "extract_from": "header",
-        "extract_with": "value",
-        "extractor_config": {
-          "header_name": "Authorization"
-        }
+        "extract_from": "",
+        "extract_with": "",
+        "extractor_config": {}
       }
     },
     "custom_middleware_bundle": "",
     "custom_middleware_bundle_disabled": false,
     "cache_options": {
-      "cache_timeout": 0,
-      "enable_cache": false,
+      "cache_timeout": 60,
+      "enable_cache": true,
       "cache_all_safe_requests": false,
       "cache_response_codes": [],
       "enable_upstream_cache_control": false,
@@ -263,35 +379,33 @@
     "expire_analytics_after": 0,
     "response_processors": [],
     "CORS": {
-      "enable": true,
-      "allowed_origins": [],
+      "enable": false,
+      "allowed_origins": [
+        "*"
+      ],
       "allowed_methods": [
         "GET",
         "POST",
-        "HEAD",
-        "PUT",
-        "PATCH",
-        "DELETE",
-        "OPTIONS"
+        "HEAD"
       ],
-      "allowed_headers": [],
+      "allowed_headers": [
+        "Origin",
+        "Accept",
+        "Content-Type",
+        "X-Requested-With",
+        "Authorization"
+      ],
       "exposed_headers": [],
-      "allow_credentials": true,
-      "max_age": 0,
+      "allow_credentials": false,
+      "max_age": 24,
       "options_passthrough": false,
       "debug": false
     },
-    "domain": "{subdomain:(?:latest-cu\\.apigw|latest-app\\.apigw|latest-partner\\.apigw|latest-ali\\.apim|latest-pub\\.apim)}.shanghaidisneyresort.com",
+    "domain": "",
     "certificates": [],
     "do_not_track": false,
     "enable_context_vars": false,
-    "config_data": {
-      "allow_client_ids": [
-        "DPRD-SHDR.MOBILE.ANDROID-LATEST",
-        "DPRD-SHDR.MOBILE.IOS-LATEST"
-      ],
-      "auth_domain": "https://pep-service-internal.cslatest.shdrapps.disney.com"
-    },
+    "config_data": {},
     "config_data_disabled": false,
     "tag_headers": [],
     "global_rate_limit": {
@@ -301,22 +415,52 @@
     "strip_auth_data": false,
     "enable_detailed_recording": false,
     "graphql": {
-      "enabled": false,
-      "execution_mode": "",
-      "version": "",
-      "schema": "",
+      "enabled": true,
+      "execution_mode": "executionEngine",
+      "version": "2",
+      "schema": "type Query {\n  getProduct(code: String): Product\n}\n\ntype ProductResult {\n  data: Product\n  code: String\n}\n\ntype Product {\n  id: ID\n  code: String\n  title: String\n  price: String\n  eventTimestamp: String\n  cityName: String\n  main_taxon_id: String\n  error: String\n}",
+      "last_schema_update": "2023-06-16T08:45:44.914Z",
       "type_field_configurations": [],
       "playground": {
-        "enabled": false,
-        "path": ""
+        "enabled": true,
+        "path": "/playground"
       },
       "engine": {
-        "field_configs": [],
-        "data_sources": []
+        "field_configs": [
+          {
+            "type_name": "Query",
+            "field_name": "getProduct",
+            "disable_default_mapping": true,
+            "path": [
+              ""
+            ]
+          }
+        ],
+        "data_sources": [
+          {
+            "kind": "REST",
+            "name": "getProduct",
+            "internal": false,
+            "root_fields": [
+              {
+                "type": "Query",
+                "fields": [
+                  "getProduct"
+                ]
+              }
+            ],
+            "config": {
+              "url": "https://faas-fra1-afec6ce7.doserverless.co/api/v1/web/fn-a2718ccd-f3bf-4c65-a07f-bda5b8233258/default/getProducts/?code={{.arguments.code}}",
+              "method": "GET",
+              "body": "",
+              "headers": {}
+            }
+          }
+        ]
       },
       "proxy": {
         "auth_headers": {},
-        "request_headers": {}
+        "request_headers": null
       },
       "subgraph": {
         "sdl": ""

@@ -1,0 +1,138 @@
+{
+  "_id": "648de86ad13bcc0001bb648d",
+  "id": "648de86ad13bcc0001bb648d",
+  "name": "Sample JWT Internal Policy",
+  "org_id": "647f46b4d13bcc0001572f59",
+  "rate": 1000,
+  "per": 60,
+  "quota_max": -1,
+  "quota_renewal_rate": -1,
+  "throttle_interval": -1,
+  "throttle_retry_limit": -1,
+  "max_query_depth": -1,
+  "access_rights": {
+    "0759e89acbe54f694b48beb2ee62e10e": {
+      "api_name": "Sample JWT Internal Topic API",
+      "api_id": "0759e89acbe54f694b48beb2ee62e10e",
+      "versions": [
+        "Default"
+      ],
+      "allowed_urls": [
+        {
+          "url": "^/$",
+          "methods": [
+            "GET",
+            "POST",
+            "PUT",
+            "PATCH",
+            "DELETE",
+            "OPTIONS",
+            "HEAD"
+          ]
+        }
+      ],
+      "restricted_types": [],
+      "limit": {
+        "rate": 1000,
+        "per": 60,
+        "throttle_interval": -1,
+        "throttle_retry_limit": -1,
+        "max_query_depth": -1,
+        "quota_max": -1,
+        "quota_renews": 0,
+        "quota_remaining": 0,
+        "quota_renewal_rate": -1,
+        "set_by_policy": false
+      },
+      "field_access_rights": [],
+      "allowance_scope": ""
+    },
+    "5b188e305c0c48395c587b4f41927a69": {
+      "api_name": "Sample JWT Internal Session API",
+      "api_id": "5b188e305c0c48395c587b4f41927a69",
+      "versions": [
+        "Default"
+      ],
+      "allowed_urls": [
+        {
+          "url": "^/$",
+          "methods": [
+            "GET",
+            "POST",
+            "PUT",
+            "PATCH",
+            "DELETE",
+            "OPTIONS",
+            "HEAD"
+          ]
+        }
+      ],
+      "restricted_types": [],
+      "limit": {
+        "rate": 1000,
+        "per": 60,
+        "throttle_interval": -1,
+        "throttle_retry_limit": -1,
+        "max_query_depth": -1,
+        "quota_max": -1,
+        "quota_renews": 0,
+        "quota_remaining": 0,
+        "quota_renewal_rate": -1,
+        "set_by_policy": false
+      },
+      "field_access_rights": [],
+      "allowance_scope": ""
+    },
+    "bd2f26da84fc4c3e4bb7a1033db504ad": {
+      "api_name": "Sample JWT Internal Speakers API",
+      "api_id": "bd2f26da84fc4c3e4bb7a1033db504ad",
+      "versions": [
+        "Default"
+      ],
+      "allowed_urls": [
+        {
+          "url": "^/$",
+          "methods": [
+            "GET",
+            "POST",
+            "PUT",
+            "PATCH",
+            "DELETE",
+            "OPTIONS",
+            "HEAD"
+          ]
+        }
+      ],
+      "restricted_types": [],
+      "limit": {
+        "rate": 1000,
+        "per": 60,
+        "throttle_interval": -1,
+        "throttle_retry_limit": -1,
+        "max_query_depth": -1,
+        "quota_max": -1,
+        "quota_renews": 0,
+        "quota_remaining": 0,
+        "quota_renewal_rate": -1,
+        "set_by_policy": false
+      },
+      "field_access_rights": [],
+      "allowance_scope": ""
+    }
+  },
+  "hmac_enabled": false,
+  "active": true,
+  "is_inactive": false,
+  "date_created": "2023-06-17T17:07:54.064Z",
+  "tags": [],
+  "key_expires_in": 0,
+  "partitions": {
+    "quota": false,
+    "rate_limit": false,
+    "complexity": false,
+    "acl": false,
+    "per_api": true
+  },
+  "last_updated": "1687023658",
+  "meta_data": {}
+}

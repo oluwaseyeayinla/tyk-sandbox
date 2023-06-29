@@ -1,0 +1,72 @@
+{
+  "_id": "648dd1b4d13bcc0001bb648a",
+  "id": "648dd1b4d13bcc0001bb648a",
+  "name": "Sample JWT Internal Speaker Policy",
+  "org_id": "647f46b4d13bcc0001572f59",
+  "rate": 1000,
+  "per": 60,
+  "quota_max": -1,
+  "quota_renewal_rate": -1,
+  "throttle_interval": -1,
+  "throttle_retry_limit": -1,
+  "max_query_depth": -1,
+  "access_rights": {
+    "bd2f26da84fc4c3e4bb7a1033db504ad": {
+      "api_name": "Sample JWT Internal Speakers API",
+      "api_id": "bd2f26da84fc4c3e4bb7a1033db504ad",
+      "versions": [
+        "Default"
+      ],
+      "allowed_urls": [
+        {
+          "url": "/speaker.*",
+          "methods": [
+            "GET"
+          ]
+        },
+        {
+          "url": "/([^s]|s[^p]|p[^e]|e[^a]|a[^k]|k[^e]|e[^r]|r).*",
+          "methods": [
+            "GET",
+            "POST",
+            "PUT",
+            "PATCH",
+            "DELETE",
+            "OPTIONS",
+            "HEAD"
+          ]
+        }
+      ],
+      "restricted_types": [],
+      "limit": {
+        "rate": 1000,
+        "per": 60,
+        "throttle_interval": -1,
+        "throttle_retry_limit": -1,
+        "max_query_depth": -1,
+        "quota_max": -1,
+        "quota_renews": 0,
+        "quota_remaining": 0,
+        "quota_renewal_rate": -1,
+        "set_by_policy": false
+      },
+      "field_access_rights": [],
+      "allowance_scope": ""
+    }
+  },
+  "hmac_enabled": false,
+  "active": true,
+  "is_inactive": false,
+  "date_created": "2023-06-17T15:31:00.146Z",
+  "tags": [],
+  "key_expires_in": 0,
+  "partitions": {
+    "quota": false,
+    "rate_limit": false,
+    "complexity": false,
+    "acl": false,
+    "per_api": true
+  },
+  "last_updated": "1687024398",
+  "meta_data": {}
+}

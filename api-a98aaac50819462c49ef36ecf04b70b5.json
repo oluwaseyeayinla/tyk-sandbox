@@ -1,14 +1,14 @@
 {
   "api_definition": {
-    "id": "645c5ce92e6d3a00011fa291",
-    "name": "JavaScript Plugin API",
-    "slug": "javascript-plugin-api",
+    "id": "6499aa19d13bcc00017f0380",
+    "name": "Virtual Endpoint",
+    "slug": "virtual-endpoint",
     "listen_port": 0,
     "protocol": "",
     "enable_proxy_protocol": false,
-    "api_id": "5d72872cffea45334e6cb4019c680cb4",
-    "org_id": "645c216b2e6d3a0001d17725",
-    "use_keyless": false,
+    "api_id": "a98aaac50819462c49ef36ecf04b70b5",
+    "org_id": "647f46b4d13bcc0001572f59",
+    "use_keyless": true,
     "use_oauth2": false,
     "use_openid": false,
     "openid_options": {
@@ -203,7 +203,7 @@
     "upstream_certificates": {},
     "pinned_public_keys": {},
     "enable_jwt": false,
-    "use_standard_auth": true,
+    "use_standard_auth": false,
     "use_go_plugin_auth": false,
     "enable_coprocess_auth": false,
     "custom_plugin_auth_enabled": false,
@@ -260,6 +260,28 @@
           },
           "use_extended_paths": true,
           "extended_paths": {
+            "virtual": [
+              {
+                "disabled": false,
+                "response_function_name": "TykIOMFCToken_2nd_code",
+                "function_source_type": "blob",
+                "function_source_uri": "ZnVuY3Rpb24gVHlrSU9NRkNUb2tlbl8ybmRfY29kZShyZXF1ZXN0LCBzZXNzaW9uLCBjb25maWcpIHsNCiAgcmF3bG9nKCIybmQgQ29kZSIpDQogIHZhciB1cmxFbmRwb2ludCA9ICJodHRwczovL2R1bW15anNvbi5jb20vaHR0cC8yMDAiOw0KICByYXdsb2coImVuZHBvaW50OiIrdXJsRW5kcG9pbnQpOw0KICByZXNwb25zZSA9IFR5a01ha2VIdHRwUmVxdWVzdCh1cmxFbmRwb2ludCk7DQogIGxvZygicmVzcG9uc2UgcmVzdWx0OiIrdHlwZW9mIHJlc3BvbnNlKTsNCiAgdmFyIHJlc3BvbnNlT2JqZWN0ID0gew0KICAgIEJvZHk6IEpTT04uc3RyaW5naWZ5KHsicmVzdWx0IHYxIjp0eXBlb2YgcmVzcG9uc2UsImV4ZWN1dGlvbiI6ImZyb20gZHVtbXlqc29uIn0pLA0KICAgIEhlYWRlcnM6IHsNCiAgICAgICJ4LXRlc3QiOiAidmlydHVhbC1oZWFkZXIiLA0KICAgICAgIngtdGVzdC0yIjogInZpcnR1YWwtaGVhZGVyLTIiDQogICAgfSwNCiAgICBDb2RlOiAyMDANCiAgfQ0KICByZXR1cm4gVHlrSnNSZXNwb25zZShyZXNwb25zZU9iamVjdCwgc2Vzc2lvbi5tZXRhX2RhdGEpIA0KfQ==",
+                "path": "/2nd_code",
+                "method": "GET",
+                "use_session": false,
+                "proxy_on_error": false
+              },
+              {
+                "disabled": false,
+                "response_function_name": "TykIOMFCToken_1st_code",
+                "function_source_type": "blob",
+                "function_source_uri": "ZnVuY3Rpb24gVHlrSU9NRkNUb2tlbl8xc3RfY29kZShyZXF1ZXN0LCBzZXNzaW9uLCBjb25maWcpIHsNCiAgcmF3bG9nKCIxc3QgQ29kZSIpDQogIG5ld1JlcXVlc3QgPSB7DQogICAgIk1ldGhvZCI6ICJHRVQiLA0KICAgICJCb2R5IjogIiIsDQogICAgIkRvbWFpbiI6ICJodHRwczovL2R1bW15anNvbi5jb20iLA0KICAgICJSZXNvdXJjZSI6ICIvaHR0cC8yMDAiLA0KICAgICJGb3JtRGF0YSI6IHt9DQogIH07DQogIHJlc3BvbnNlID0gVHlrTWFrZUh0dHBSZXF1ZXN0KEpTT04uc3RyaW5naWZ5KG5ld1JlcXVlc3QpKTsNCiAgcmF3bG9nKCJyZXNwb25zZSByZXN1bHQ6Iit0eXBlb2YgcmVzcG9uc2UpOw0KICB2YXIgcmVzcG9uc2VPYmplY3QgPSB7DQogICAgQm9keTogSlNPTi5zdHJpbmdpZnkoeyJyZXN1bHQgdjMiOnR5cGVvZiByZXNwb25zZSwiZXhlY3V0aW9uIjoiZnJvbSBkdW1teWpzb24ifSksDQogICAgSGVhZGVyczogew0KICAgICAgIngtdGVzdCI6ICJ2aXJ0dWFsLWhlYWRlciIsDQogICAgICAieC10ZXN0LTIiOiAidmlydHVhbC1oZWFkZXItMiINCiAgICB9LA0KICAgIENvZGU6IDIwMA0KICB9DQogIHJldHVybiBUeWtKc1Jlc3BvbnNlKHJlc3BvbnNlT2JqZWN0LCBzZXNzaW9uLm1ldGFfZGF0YSkgDQp9",
+                "path": "/1st_code",
+                "method": "GET",
+                "use_session": false,
+                "proxy_on_error": false
+              }
+            ],
             "persist_graphql": []
           },
           "global_headers": {},
@@ -293,8 +315,8 @@
     },
     "proxy": {
       "preserve_host_header": false,
-      "listen_path": "/http/plugin/js/",
-      "target_url": "http://host.docker.internal:7070/hello",
+      "listen_path": "/virtual-endpoint/",
+      "target_url": "http://host.docker.internal:8080/hello",
       "disable_strip_slash": true,
       "strip_listen_path": true,
       "enable_load_balancing": false,
@@ -324,15 +346,7 @@
     "disable_rate_limit": false,
     "disable_quota": false,
     "custom_middleware": {
-      "pre": [
-        {
-          "disabled": false,
-          "name": "customJsGatewayApiDefinitionPlugin",
-          "path": "./plugins/middleware/js_gateway_api_definition.js",
-          "require_session": false,
-          "raw_body_only": false
-        }
-      ],
+      "pre": [],
       "post": [],
       "post_key_auth": [],
       "auth_check": {
@@ -343,7 +357,7 @@
         "raw_body_only": false
       },
       "response": [],
-      "driver": "otto",
+      "driver": "",
       "id_extractor": {
         "disabled": false,
         "extract_from": "",
@@ -438,7 +452,7 @@
       },
       "proxy": {
         "auth_headers": {},
-        "request_headers": {}
+        "request_headers": null
       },
       "subgraph": {
         "sdl": ""

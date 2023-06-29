@@ -1,0 +1,53 @@
+{
+  "_id": "648dce32d13bcc000158a10a",
+  "id": "648dce32d13bcc000158a10a",
+  "name": "Demo Conference Policy",
+  "org_id": "647f46b4d13bcc0001572f59",
+  "rate": 1000,
+  "per": 60,
+  "quota_max": -1,
+  "quota_renewal_rate": -1,
+  "throttle_interval": -1,
+  "throttle_retry_limit": -1,
+  "max_query_depth": -1,
+  "access_rights": {
+    "cf410590260749ad47526f1ad0d2291b": {
+      "api_name": "Demo Conference API",
+      "api_id": "cf410590260749ad47526f1ad0d2291b",
+      "versions": [
+        "default"
+      ],
+      "allowed_urls": [],
+      "restricted_types": [],
+      "limit": {
+        "rate": 1000,
+        "per": 60,
+        "throttle_interval": -1,
+        "throttle_retry_limit": -1,
+        "max_query_depth": -1,
+        "quota_max": -1,
+        "quota_renews": 0,
+        "quota_remaining": 0,
+        "quota_renewal_rate": -1,
+        "set_by_policy": false
+      },
+      "field_access_rights": [],
+      "allowance_scope": ""
+    }
+  },
+  "hmac_enabled": false,
+  "active": true,
+  "is_inactive": false,
+  "date_created": "2023-06-17T15:16:02.434Z",
+  "tags": [],
+  "key_expires_in": 0,
+  "partitions": {
+    "quota": false,
+    "rate_limit": false,
+    "complexity": false,
+    "acl": false,
+    "per_api": true
+  },
+  "last_updated": "1687014962",
+  "meta_data": {}
+}

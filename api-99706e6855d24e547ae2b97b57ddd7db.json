@@ -1,14 +1,14 @@
 {
   "api_definition": {
-    "id": "645e791e2e6d3a0001f2d499",
-    "name": "Virtual Endpoint",
-    "slug": "virtual-endpoint",
+    "id": "6491818fd13bcc000196ef22",
+    "name": "Dashboard Access",
+    "slug": "DashboardAccess",
     "listen_port": 0,
     "protocol": "",
     "enable_proxy_protocol": false,
-    "api_id": "c835a29c0d4141e84bb0fb9d060b428d",
-    "org_id": "645c216b2e6d3a0001d17725",
-    "use_keyless": false,
+    "api_id": "99706e6855d24e547ae2b97b57ddd7db",
+    "org_id": "647f46b4d13bcc0001572f59",
+    "use_keyless": true,
     "use_oauth2": false,
     "use_openid": false,
     "openid_options": {
@@ -203,7 +203,7 @@
     "upstream_certificates": {},
     "pinned_public_keys": {},
     "enable_jwt": false,
-    "use_standard_auth": true,
+    "use_standard_auth": false,
     "use_go_plugin_auth": false,
     "enable_coprocess_auth": false,
     "custom_plugin_auth_enabled": false,
@@ -260,50 +260,6 @@
           },
           "use_extended_paths": true,
           "extended_paths": {
-            "ignored": [
-              {
-                "disabled": false,
-                "path": "/?",
-                "method": "",
-                "ignore_case": false,
-                "method_actions": {
-                  "GET": {
-                    "action": "no_action",
-                    "code": 200,
-                    "data": "",
-                    "headers": {}
-                  }
-                }
-              }
-            ],
-            "white_list": [
-              {
-                "disabled": false,
-                "path": "/?",
-                "method": "",
-                "ignore_case": false,
-                "method_actions": {
-                  "GET": {
-                    "action": "no_action",
-                    "code": 200,
-                    "data": "",
-                    "headers": {}
-                  }
-                }
-              }
-            ],
-            "virtual": [
-              {
-                "disabled": false,
-                "response_function_name": "jsSyncAndAsync",
-                "function_source_type": "blob",
-                "function_source_uri": "ZnVuY3Rpb24ganNTeW5jQW5kQXN5bmMocmVxdWVzdCwgc2Vzc2lvbiwgY29uZmlnKSB7CiAgdmFyIHJlc3BvbnNlT2JqZWN0ID0geyAKICAgIEJvZHk6ICJUaGlzIGlzIGEgZGVmYXVsdCB2aXJ0dWFsIGVuZHBvaW50IHJlc3BvbnNlIiwgCiAgICBDb2RlOiAyMDAgCiAgfQogIAogIHJlc3BvbnNlID0gc3luY1JlcXVlc3QocmVxdWVzdCkKICByZXNwb25zZU9iamVjdC5Cb2R5ID0gcmVzcG9uc2UuQm9keQogIHJlc3BvbnNlT2JqZWN0LkNvZGUgPSByZXNwb25zZS5Db2RlCiAgCiAgYXN5bmNSZXF1ZXN0KCkKICAKICByZXR1cm4gVHlrSnNSZXNwb25zZShyZXNwb25zZU9iamVjdCwgc2Vzc2lvbi5tZXRhX2RhdGEpCn0KCmZ1bmN0aW9uIHN5bmNSZXF1ZXN0KHJlcXVlc3QpIHsKICAgIC8vTWFrZSBhcGkgY2FsbCB0byB1cHN0cmVhbSB0YXJnZXQKICAgIHBvc3RSZXF1ZXN0ID0gewogICAgICAgICJNZXRob2QiOiAiUE9TVCIsCiAgICAgICAgIkZvcm1EYXRhIjogeyJoZWxsbyI6IndvcmxkIn0sCiAgICAgICAgIkhlYWRlcnMiOiB7ImNvbnRlbnQtdHlwZSI6ImFwcGxpY2F0aW9uL3gtd3d3LWZvcm0tdXJsZW5jb2RlZCJ9LAogICAgICAgICJEb21haW4iOiAiaHR0cDovL2h0dHBiaW4ub3JnL2FueXRoaW5nIiwKICAgICAgICAiUmVzb3VyY2UiOiAiL3Bvc3QiCiAgICB9OwogICAgdmFyIHBvc3RSZXF1ZXN0U3RyID0gSlNPTi5zdHJpbmdpZnkocG9zdFJlcXVlc3QpCiAgICBsb2coInBvc3RSZXF1ZXN0U3RyIG9iamVjdDogIiArIHBvc3RSZXF1ZXN0U3RyKQogICAgCiAgICByYXdsb2coIi0tLSBiZWZvcmUgdXBzdHJlYW0gLS0tIikKICAgIHJlc3BvbnNlT2JqZWN0UmF3ID0gVHlrTWFrZUh0dHBSZXF1ZXN0KHBvc3RSZXF1ZXN0U3RyKTsKICAgIHJhd2xvZygiLS0tIEFmdGVyIHVwc3RyZWFtIC0tLSIpCiAgICAKICAgIHJlc3BvbnNlT2JqZWN0ID0gSlNPTi5wYXJzZShyZXNwb25zZU9iamVjdFJhdyk7CiAgICBsb2coJ3Jlc3BvbnNlT2JqZWN0OiAnICsgSlNPTi5zdHJpbmdpZnkocmVzcG9uc2VPYmplY3QpKTsKICAgIHJldHVybiByZXNwb25zZU9iamVjdDsKfQoKZnVuY3Rpb24gYXN5bmNSZXF1ZXN0KCkgewogICAgLy9NYWtlIGFwaSBjYWxsIHRvIGEgd2ViaG9vayB0YXJnZXQKICAgIHdlYmhvb2tSZXF1ZXN0ID0gewogICAgICAgICJNZXRob2QiOiAiR0VUIiwKICAgICAgICAiRG9tYWluIjogImh0dHA6Ly9sb2NhbGhvc3Q6NzA3MC9kZWxheWVkLXdlYmhvb2stdmlhLXZpcnR1YWwtZW5kcG9pbnQiLAogICAgICAgICJSZXNvdXJjZSI6ICIvIgogICAgfTsKICAgIAogICAgdmFyIHdlYmhvb2tSZXF1ZXN0U3RyID0gSlNPTi5zdHJpbmdpZnkod2ViaG9va1JlcXVlc3QpCiAgICBsb2coIndlYmhvb2tSZXF1ZXN0U3RyIG9iamVjdDogIiArIHdlYmhvb2tSZXF1ZXN0U3RyKQogICAgCiAgICByYXdsb2coIi0tLSBiZWZvcmUgd2ViaG9vayAtLS0iKQogICAgcmVzcG9uc2VPYmplY3RSYXcgPSBUeWtNYWtlSHR0cFJlcXVlc3Qod2ViaG9va1JlcXVlc3RTdHIpOwogICAgcmF3bG9nKCItLS0gQWZ0ZXIgd2ViaG9vayAtLS0iKQogICAgCiAgICByZXNwb25zZU9iamVjdCA9IEpTT04ucGFyc2UocmVzcG9uc2VPYmplY3RSYXcpOwogICAgbG9nKCdyZXNwb25zZU9iamVjdDogJyArIEpTT04uc3RyaW5naWZ5KHJlc3BvbnNlT2JqZWN0KSk7Cn0=",
-                "path": "/?",
-                "method": "GET",
-                "use_session": false,
-                "proxy_on_error": false
-              }
-            ],
             "persist_graphql": []
           },
           "global_headers": {},
@@ -337,8 +293,8 @@
     },
     "proxy": {
       "preserve_host_header": false,
-      "listen_path": "/virtual-endpoint/",
-      "target_url": "http://host.docker.internal:7070/hello",
+      "listen_path": "/dashboard_access/",
+      "target_url": "",
       "disable_strip_slash": true,
       "strip_listen_path": true,
       "enable_load_balancing": false,
@@ -379,7 +335,7 @@
         "raw_body_only": false
       },
       "response": [],
-      "driver": "otto",
+      "driver": "",
       "id_extractor": {
         "disabled": false,
         "extract_from": "",
@@ -459,14 +415,15 @@
     "strip_auth_data": false,
     "enable_detailed_recording": false,
     "graphql": {
-      "enabled": false,
-      "execution_mode": "proxyOnly",
+      "enabled": true,
+      "execution_mode": "executionEngine",
       "version": "2",
-      "schema": "",
+      "schema": "type Query {\n  apis(query: ApisQuery!): ApisResult!\n  # get list of api definitions\n\n  api(id: String!): ApiResult!\n  # get api by ID\n\n  policies(query: PoliciesQuery!): PoliciesResult!\n  # search policies\n\n  policy(id: String!): PolicyResult!\n  # get policy by id\n\n  certs(page: Int! = 1): CertsResult!\n  # get list of certificates details\n\n  keys(page: Int! = 1 query: String): KeysResult!\n  \n  key(query: KeyQuery!): KeyResult!\n}\n\ntype Mutation {\n  create_policy(policy: PolicyInput!): RequestResult!\n  #create policy\n\n  update_policy(id: String!policy: PolicyInput!): RequestResult!\n  #update policy\n\n  delete_policy(id: String!): RequestResult!\n  #delete policy\n\n  keys_preview(key: KeyInput!): KeyResult!\n  #key preview\n\n  keys_create(key: KeyInput!basic_auth: Boolean): KeyResult!\n  #create key\n\n  keys_update(query: KeyQuery!key: KeyInput!): KeyResult!\n  #update key\n\n  keys_delete(query: KeyQuery!): RequestResult!\n  #delete key\n}\n\n###############\n# Input Qureies\n###############\ninput KeyQuery {\n  default: String\n}\n\ninput KeyInput {\n  default: String\n}\n\ninput PoliciesQuery {\n  default: String\n}\n\ninput PolicyInput {\n  default: String\n}\n\ninput ApisQuery {\n  name: String\n  #param to search api by it's name\n\n  auth_type: String\n  #param to filter by comma separated auth type list\n\n  category: String\n  #param to filter by comma separated category list\n\n  api_type: ApiType\n  #param to filter by api type\n\n  sort: String\n  #param to sort results. allowed fields: created_at allowed values: +created_at, -created_at\n\n  page: Int! = 1\n  #param to request specific page of results\n}\n\ninput ApiType {\n  rest: String\n  tcp: String\n  graphql: String\n  udg: String\n  subgraph: String\n  supergraph: String\n  internal: String\n}\n\n################\n# Output Results\n################\ntype KeysResult {\n  default: String\n}\n\ntype KeyResult {\n  KeysDetailed: KeysDetailed\n  RequestResult: RequestResult\n}\n\ntype CertsResult {\n  default: String\n}\n\ntype PoliciesResult {\n  default: String\n}\n\n\ntype PolicyResult {\n  default: String\n}\n\ntype ApisResult {\n  default: String\n}\n\ntype ApiResult {\n  default: String\n}\n\ntype RequestResult {\n  default: String\n}\n\ntype KeysDetailed {\n  keys: [KeyData!]\n  pages: Int\n}\n\ntype KeyData {\n  data: KeyData_data\n  key_hash: String\n  key_id: String\n  schemaPath: String\n}\n\n\n\ntype KeyData_data {\n  access_rights_array: [AccessDefinition!]\n  alias: String\n  allowance: Float\n  apply_policies: [String!]\n  apply_policies_data: [Policy]\n  basic_auth_data: KeyData_data_basic_auth_data\n  certificate: String\n  certificate_meta: CertificateMeta\n  data_expires: Int\n  date_created: String\n  enable_detailed_recording: Boolean\n  expires: Int\n  hmac_enabled: Boolean\n  hmac_string: String\n  id_extractor_deadline: Int\n  is_inactive: Boolean\n  jwt_data: KeyData_data_jwt_data\n  keyHash: String\n  #Used to store token hash\n\n  last_check: Int\n  last_updated: String\n  max_query_depth: Int\n  meta_data: JSON\n  monitor: KeyData_data_monitor\n  oauth_client_id: String\n  oauth_keys_array: [KeyValue]\n  org_id: String\n  per: Float\n  quota_max: Int\n  quota_remaining: Int\n  quota_renewal_rate: Int\n  quota_renews: Int\n  rate: Float\n  session_lifetime: Int\n  tags: [String!]\n  throttle_interval: Float\n  throttle_retry_limit: Int\n}\n\ntype Policy{\n  default: String\n}\n\ntype AccessDefinition{\n  default: String\n}\n\ntype KeyValue{\n  default: String\n}\n\ntype KeyData_data_monitor{\n  default: String\n}\n\ntype KeyData_data_jwt_data{\n  default: String\n}\n\ntype KeyData_data_basic_auth_data{\n  default: String\n}\n\ntype CertificateMeta{\n  default: String\n}\n\ntype JSON{\n  default: String\n}",
+      "last_schema_update": "2023-06-20T11:31:14.8Z",
       "type_field_configurations": [],
       "playground": {
-        "enabled": false,
-        "path": ""
+        "enabled": true,
+        "path": "/playground"
       },
       "engine": {
         "field_configs": [],
@@ -474,7 +431,7 @@
       },
       "proxy": {
         "auth_headers": {},
-        "request_headers": {}
+        "request_headers": null
       },
       "subgraph": {
         "sdl": ""
